@@ -1,0 +1,77 @@
+<?php
+$team = [
+    [
+        "img" => "em.jpg",
+        "name" => "Erica Mae Barriga",
+        "bio"  => "A kinda aspiring developer energized by coke, wi-fi and memes. Loves figuring things out, even if it means a few Google searches (or a lot).",
+        "skills" => ["HTML, CSS, C++", "Problem-solving", "Team collaboration & communication"],
+        "socials" => [
+            "Facebook" => "https://www.facebook.com/noxtureri",
+            "Instagram" => "https://www.instagram.com/err.qlo/"
+        ]
+    ],
+    [
+        "img" => "marv.jpg",
+        "name" => "Marvin Tormis",
+        "bio"  => "A gamer and explorer who loves discovering cool places and catching up on my favorite shows and films.",
+        "skills" => ["Media Appreciation", "Can track/identify certain places", "Gaming Knowledge"],
+        "socials" => [
+            "Facebook" => "https://www.facebook.com/nvmitseast",
+            "Instagram" => "https://www.instagram.com/trmsmrvin/?igsh=MTFkYzMyeXZoOHVpdw%3D%3D&utm_source=qr#"
+        ]
+    ]
+];
+
+echo '<!DOCTYPE html>';
+echo '<html lang="en">';
+echo '<head>';
+echo '<meta charset="UTF-8">';
+echo '<meta name="viewport" content="width=device-width, initial-scale=1.0">';
+echo '<title>meowware</title>';
+echo '<style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f4f4f4; color: #333; }
+    header { text-align: center; padding: 20px; background: #8F9779; color: white; }
+    .team-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 20px; max-width: 1200px; margin: auto; }
+    .card { background: white; border-radius: 8px; padding: 15px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+    .card img { width: 200px; height: 200px; border-radius: 50%; object-fit: cover; }
+    .name { font-size: 18px; font-weight: bold; margin: 10px 0 5px; }
+    .bio { font-size: 14px; margin-bottom: 10px; }
+    .skills { margin-bottom: 10px; }
+    .skills span { display: inline-block; background: #eee; padding: 5px 8px; margin: 3px; border-radius: 4px; font-size: 12px; }
+    .socials a { margin: 0 5px; text-decoration: underline; text-decoration-thickness: 2px; text-decoration-color: #8F9779; color: #333; font-size: 14px; }
+    footer { text-align: center; padding: 20px; background: #8F9779; color: white; }
+</style>';
+echo '</head>';
+echo '<body>';
+
+echo '<header>';
+echo '<h1>MEOWWARE</h1>';
+echo '<p>Meet the amazing members behind this project</p>';
+echo '</header>';
+
+echo '<div class="team-container">';
+foreach ($team as $member) {
+    echo '<div class="card">';
+    echo '<img src="'.$member['img'].'" alt="'.$member['name'].'">';
+    echo '<div class="name">'.$member['name'].'</div>';
+    echo '<div class="bio">'.$member['bio'].'</div>';
+    echo '<div class="skills">';
+    foreach ($member['skills'] as $skill) {
+        echo '<span>'.$skill.'</span>';
+    }
+    echo '</div>';
+    echo '<div class="socials">';
+    foreach ($member['socials'] as $platform => $link) {
+        echo '<a href="'.$link.'">'.$platform.'</a>';
+    }
+    echo '</div>';
+    echo '</div>';
+}
+echo '</div>';
+
+echo '<footer><p>To God be the glory.</p></footer>';
+
+echo '</body>';
+echo '</html>';
+?>
+www.facebook.co
