@@ -1,0 +1,49 @@
+<?php 
+// IF STATEMENTS
+$temperature = 30;
+if ($temperature > 25) {
+    echo "Sobrang init na kailangan ko ng ice<br>";
+}
+
+// IF...ELSE STATEMENTS
+$hasTicket = true;
+if ($hasTicket) {
+    echo "Maari kanang pumasok sa lupain ng encantandia.<br>";
+} else {
+    echo "Kailangan mo muna ng EN(Encantadia) pass.<br>";
+}
+
+// IF... ELSEIF...ELSE STATEMENTS 
+$platform = "Instagram";
+if ($platform === "Facebook") {
+    echo "meta nga talaga sya<br>";
+} elseif ($platform === "Twitter") {
+    echo "eto yong alalang hindi na binabalikan,(X)<br>";
+} elseif ($platform === "Instagram") {
+    echo "App na pang Istitek<br>";
+} else {
+    echo "Doc, gising na po sya<br>";
+}
+// SWITCH STATEMENTS 
+$notificationType = 'Mention';
+switch ($notificationType) {
+    case 'Like':
+        echo "Someone like you as a friend este, like your post.<br>";
+        break;
+    case 'Comment':
+        echo "You received mixed signals, late replies, rejection, eme. a  new comment.<br>";
+        break;
+    case 'Mention':
+        echo "You were mentioned but never rememembered jk, in a post.<br>";
+        break;
+    case 'Follow':
+        echo "You have a new follower, dont assume its her.<br>";
+        break;
+    case 'Share':
+        echo "Someone shared your content. sana yong ishare din nya feelings nya saken, eme.<br>";
+        break;
+    default:
+        echo "You have a new notification.<br>";
+        break;
+}
+?>
