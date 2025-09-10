@@ -1,5 +1,5 @@
 <?php
-// database connection
+
 $host = "localhost";
 $user = "root";
 $pass = "";
@@ -12,14 +12,14 @@ if ($conn->connect_error) {
 
 $message = "";
 
-// delete request
+
 if (isset($_GET['delete'])) {
     $delete_id = intval($_GET['delete']);
     $conn->query("DELETE FROM customers WHERE id=$delete_id");
     $message = "Client deleted!";
 }
 
-// add request
+
 if (isset($_GET['name']) && isset($_GET['email']) && !isset($_GET['delete'])) {
     $name  = $_GET['name'];
     $phone = isset($_GET['phone']) ? $_GET['phone'] : '';
@@ -104,5 +104,6 @@ if (isset($_GET['name']) && isset($_GET['email']) && !isset($_GET['delete'])) {
 
 </body>
 </html>
+
 
 <?php $conn->close(); ?>
