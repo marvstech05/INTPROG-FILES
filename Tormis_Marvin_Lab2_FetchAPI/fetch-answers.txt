@@ -1,0 +1,13 @@
+Guide Questions
+
+
+1.What are the main differences between XMLHttpRequest and Fetch API?
+- The main differences between XMLHttpRequest (XHR) and the Fetch API are in their structure and how they handle asynchronous requests. XMLHttpRequest is the older method and relies on callbacks, which can make the code look more complex and harder to maintain. On the other hand, the Fetch API uses Promises, which provide a cleaner and more readable way to work with asynchronous operations. Fetch also makes it easier to convert responses to JSON, while XHR requires manual parsing using JSON.parse(). In addition, Fetch supports modern JavaScript features like async and await, making it more efficient and developer-friendly compared to the traditional XHR.
+
+2. Why is the Fetch API considered more modern and readable?
+- Fetch API is considered more modern and readable because it uses Promises and async/await, which make the code look smoother and easier to follow. Unlike the old XMLHttpRequest that needs a lot of steps and callback functions, Fetch lets us write fewer lines of code to do the same thing. It’s also easier to handle success and errors by just using .then() for successful requests and .catch() for errors. That’s why most developers today prefer using Fetch — it’s simpler, cleaner, and feels more updated.
+
+3. What is the purpose of the .then() and .catch() methods in Fetch?
+- In the Fetch API, the .then() and .catch() methods are used to handle the results of a Promise after making an HTTP request. The .then() method runs when the request is successful and is typically used to process or display the data that was returned by the server. Meanwhile, the .catch() method runs when there is an error, such as a network issue or a failed response. Together, these methods make it easier to manage both successful outcomes and errors in a clear and organized way.
+4. What happens when you send a POST request to the placeholder API?
+- When a POST request is sent to the JSONPlaceholder API, it does not actually save the data permanently because the site only provides fake or test endpoints. However, the API simulates a successful response by returning the same data that was sent, along with a new ID—usually 101—to indicate that a new post was “created.” This allows developers and students to test and understand how POST requests work in real APIs without affecting any real data or servers.
