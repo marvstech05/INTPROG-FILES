@@ -1,0 +1,24 @@
+
+XML Reflection
+    Throughout this exercise period, I got to know that strict syntax rules are definitely 
+followed by XML like having single root element and closed tags. When I tried to validate 
+the file online, I was enlightened about the fact that a pin-point mistake in the file would 
+result in numerous errors. After correcting them all and checking again, to get the message 
+"No errors were found," I realized how structure and validation are significant for sharing data between 
+different systems. This task has increased my production and evaluation skills for XML files. 
+
+What are the basic rules of XML you applied in this lab?
+    -​‍​‌‍​‍‌​‍​‌‍​‍‌ I have elaborated on the most basic XML rules by myself such as having a single root element (<students>), 
+correct nesting of tags, making sure that every opening tag is followed by a closing one, and element names 
+being case sensitive. Besides, I was also concerned that the XML declaration is at the top and that the format 
+is not only executable but also human-readable.
+
+ Why does XML need a single root element?
+    - As XML is a file that has to be wrapped into a single root element, it is the main container of all the 
+other elements that are in the document. Hence, the XML file has a distinctly defined tree structure and can 
+be read and parsed by machines or applications.
+
+ How does XML ensure interoperability?
+    - XML ensures interoperability by sticking to a non-platform and human-readable text format that can be 
+easily understood by different software and systems. The use of standard syntax makes the data very attractive 
+to be easily transferable, storable, and processable by any technology, programming language, or ​‍​‌‍​‍‌​‍​‌‍​‍‌platform.
