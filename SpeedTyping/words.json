@@ -1,0 +1,38 @@
+{
+  "Easy": [
+    "The cat is sleeping on the chair.",
+    "I like to eat apples and bananas.",
+    "She is reading a book in the room.",
+    "The sun is shining brightly today.",
+    "He is running fast to catch the bus.",
+    "We are learning typing in class.",
+    "The dog is playing in the garden.",
+    "I drink water every morning.",
+    "My phone is on the table.",
+    "The clock shows it is time for lunch."
+  ],
+  "Medium": [
+    "The software needs to be tested before release.",
+    "An algorithm can solve complex problems quickly.",
+    "The network connection was interrupted yesterday.",
+    "We analyzed the document carefully for errors.",
+    "The function calculates the total price automatically.",
+    "Optimization improves the performance of the system.",
+    "She compiled the code and ran it successfully.",
+    "The variable stores the user input value.",
+    "During debugging, he found a hidden bug.",
+    "The class inherits properties from its parent class."
+  ],
+  "Hard": [
+    "Asynchronous operations allow multiple tasks to run concurrently.",
+    "Polymorphism enables objects to take many forms in programming.",
+    "Encapsulation protects data by restricting direct access to variables.",
+    "Abstraction hides complex implementation details from the user.",
+    "The interface defines the structure of classes and methods.",
+    "Implementation of advanced algorithms improves application efficiency.",
+    "Virtual methods can be overridden by derived classes.",
+    "The callback function executes after the asynchronous request completes.",
+    "Event listeners monitor user actions such as clicks or key presses.",
+    "Accessibility ensures that applications are usable by everyone, including screen readers."
+  ]
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About - Typify</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<!-- External CSS -->
+<link rel="stylesheet" href="styles.css">
+
+<style>
+.about-title {
+    color: #6c82ff;
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 1px;
+    margin-top: -50px;
+}
+
+.about-subtext {
+    color: #ccc;
+    text-align: center;
+    max-width: 800px;
+    margin: auto;
+    font-size: 1.1rem;
+}
+
+.about-card h3 {
+    text-align: center;
+    color: white;
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+}
+
+.about-card ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.about-card li {
+    margin: 8px 0;
+    color: #ccc;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <div class="header-left">
+        <img src="images/typify.png" alt="Typify Logo" class="logo">
+        <h1>Typify</h1>
+    </div>
+    <nav class="nav-links">
+        <ul>
+            <li><a href="index.html">Test</a></li>
+            <li><a href="leaderboard.php">Leaderboard</a></li>
+            <li><a href="about.html" class="active">About</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="container">
+    <h2 class="about-title">About Typify</h2>
+    <p class="about-subtext">
+        Typify was created with a simple goal to bring a clean, fast, and distraction-free typing experience for anyone who wants to improve their speed or just enjoy typing.
+    </p>
+
+    <div class="card about-card">
+        <h3>What Typify Offers</h3>
+        <ul>
+            <li>⚡ Smooth and responsive typing environment</li>
+            <li>🧩 Simple difficulty options for flexible practice</li>
+            <li>🔍 Word tracking that highlights your progress in real time</li>
+            <li>🏅 A leaderboard that records your best runs</li>
+        </ul>
+    </div>
+</main>
+
+<footer>
+    <p>Typify © 2025</p>
+</footer>
+
+<script>
+// Sticky header shadow
+const header = document.querySelector('header');
+window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 10);
+});
+
+// Active link highlight
+const currentPage = window.location.pathname.split("/").pop();
+const navLinks = document.querySelectorAll('nav a');
+navLinks.forEach(link => {
+    if(link.getAttribute('href') === currentPage) {
+        link.classList.add('active');
+    }
+});
+</script>
+
+</body>
+</html>

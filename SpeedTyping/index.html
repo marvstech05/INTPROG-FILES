@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Typify</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<!-- External CSS -->
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <div class="header-left">
+        <img src="images/typify.png" alt="Typify Logo" class="logo">
+        <h1>Typify</h1>
+    </div>
+
+    <nav class="nav-links">
+        <ul>
+            <li><a href="index.html">Test</a></li>
+            <li><a href="leaderboard.php">Leaderboard</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main class="container">
+    <div class="card">
+        <p id="displayText" class="display-text">Click "Start Test" to begin</p>
+    </div>
+
+    <textarea id="inputField" placeholder="Start typing here..." disabled></textarea>
+
+    <div class="stats">
+        <div class="stat-item">⏱ Time: <span id="time">60</span>s</div>
+        <div class="stat-item">⌨️ WPM: <span id="wpm">0</span></div>
+    </div>
+
+    <div class="controls">
+        <select id="timeSelect">
+            <option value="30">30s</option>
+            <option value="60" selected>60s</option>
+            <option value="120">120s</option>
+        </select>
+        <select id="difficultySelect">
+            <option value="Easy" selected>Easy</option>
+            <option value="Medium">Medium</option>
+            <option value="Hard">Hard</option>
+        </select>
+        <button id="resetBtn" class="btn">Reset</button>
+    </div>
+
+    <button id="startBtn" class="btn start-btn">Start Test</button>
+</main>
+
+<footer>
+    <p>Typify © 2025</p>
+</footer>
+
+<script src="app.js"></script>
+<script>
+// Sticky header shadow
+const header = document.querySelector('header');
+window.addEventListener('scroll', () => {
+    header.classList.toggle('scrolled', window.scrollY > 10);
+});
+
+// Active navbar link
+const currentPage = window.location.pathname.split("/").pop();
+const navLinks = document.querySelectorAll('nav a');
+navLinks.forEach(link => {
+    if(link.getAttribute('href') === currentPage) {
+        link.classList.add('active');
+    }
+});
+</script>
+
+</body>
+</html>

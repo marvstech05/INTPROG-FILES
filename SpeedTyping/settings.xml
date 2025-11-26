@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings>
+    <!-- Duration of each typing test in seconds -->
+    <timeLimit>60</timeLimit>
+
+    <!-- Difficulty levels control which JSON set is loaded -->
+    <difficulty default="medium">
+        <level id="easy" json="words_easy.json"/>
+        <level id="medium" json="words.json"/>
+        <level id="hard" json="words_hard.json"/>
+    </difficulty>
+
+    <!-- UI Theme -->
+    <theme>
+        <background>#0d0d0d</background>
+        <text>#ffffff</text>
+        <accent>#4a90e2</accent>
+    </theme>
+
+    <!-- Server endpoints -->
+    <endpoints>
+        <saveResult>results.php</saveResult>
+        <leaderboard>leaderboard.php</leaderboard>
+    </endpoints>
+</settings>
